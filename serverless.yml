@@ -1,4 +1,3 @@
-org: plake
 app: serverless-plaground
 service: serverless-playground
 
