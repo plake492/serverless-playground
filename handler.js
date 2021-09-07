@@ -5,7 +5,7 @@ module.exports.hello = async event => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: `THE ENV VARIABLE IS ${process.env.MESSAGE}`,
+        message: `THE ENV VARIABLE IS ${process.env.MESSAGE}, wow this is cool`,
         input: event
       },
       null,
