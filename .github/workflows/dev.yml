@@ -1,4 +1,4 @@
-name: deploy sls playground
+name: deploy DEVELOPMENT ENV sls playground
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - name: serverless deploy --dev
+      - name: serverless deploy -- stage dev
         uses: serverless/github-action@master
         with:
           args: deploy
